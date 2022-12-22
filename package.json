@@ -1,11 +1,11 @@
 {
   "name": "error-boundary-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist-mjs/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm-ez dev",
+    "dev": "npm-ez dev --module=mjs",
     "build": "npm-ez build"
   },
   "repository": {
@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/NazmusSayad/error-boundary-react#readme",
   "devDependencies": {
-    "npm-ez": "^0.0.18",
     "@types/react": "^18.0.26",
+    "npm-ez": "^1.0.2",
     "typescript": "^4.9.3"
   },
   "types": "./dist-mjs/index.d.js",
