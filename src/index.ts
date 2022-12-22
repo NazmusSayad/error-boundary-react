@@ -1,7 +1,10 @@
 import React from 'react'
 
 interface ErrorBoundary {
-  props: any
+  props: {
+    children: any
+    element: Function | any
+  }
   state: {
     error: null | any
     errorInfo: null | any
