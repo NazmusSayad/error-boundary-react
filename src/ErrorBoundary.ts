@@ -3,7 +3,7 @@ import React from 'react'
 interface ErrorBoundary {
   props: {
     children: any
-    element: Function | any
+    fallback: Function | any
   }
   state: {
     error: null | any
@@ -26,7 +26,7 @@ class ErrorBoundary extends React.Component {
   }
 
   render() {
-    const { children, element: ErrorComponent } = this.props
+    const { children, fallback: ErrorComponent } = this.props
 
     if (!this.state.error) return children
 

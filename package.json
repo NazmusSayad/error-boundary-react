@@ -1,37 +1,34 @@
 {
-  "name": "error-boundary-react",
-  "version": "1.0.1",
-  "description": "",
-  "main": "./dist-mjs/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm-ez dev --module=mjs",
-    "build": "npm-ez build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NazmusSayad/error-boundary-react.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/NazmusSayad/error-boundary-react/issues"
-  },
-  "homepage": "https://github.com/NazmusSayad/error-boundary-react#readme",
-  "devDependencies": {
-    "@types/react": "^18.0.26",
-    "npm-ez": "^1.0.2",
-    "typescript": "^4.9.3"
-  },
-  "types": "./dist-mjs/index.d.js",
-  "exports": {
-    ".": {
-      "require": "./dist-cjs/index.js",
-      "import": "./dist-mjs/index.js"
-    }
-  },
-  "peerDependencies": {
-    "react": "*"
-  }
+	"name": "error-boundary-react",
+	"version": "1.0.2",
+	"scripts": {
+		"dev": "npm-ez dev",
+		"build": "npm-ez build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/NazmusSayad/error-boundary-react.git"
+	},
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/NazmusSayad/error-boundary-react/issues"
+	},
+	"homepage": "https://github.com/NazmusSayad/error-boundary-react#readme",
+	"devDependencies": {
+		"@types/react": "^18.0.26",
+		"npm-ez": "^2.0.2",
+		"typescript": "^4.9.3"
+	},
+	"peerDependencies": {
+		"react": "*"
+	},
+	"main": "./dist-cjs/index.cjs",
+	"module": "./dist-mjs/index.mjs",
+	"exports": {
+		".": {
+			"require": "./dist-cjs/index.cjs",
+			"import": "./dist-mjs/index.mjs",
+			"types": "./dist-mjs/index.mts"
+		}
+	}
 }
